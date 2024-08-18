@@ -99,7 +99,7 @@ function Nav() {
         </div>
         <div className="hidden md:flex w-[70%] outline-none border-none">
           <Input
-            className="w-full bg-gray-100"
+            className="w-full bg-gray-200"
             icon={
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -146,7 +146,7 @@ function Nav() {
       </div>
       <div className="md:hidden w-full mx-auto mt-3">
           <Input
-            className="w-full bg-gray-100"
+            className="w-full bg-white outline-none"
             icon={
               <svg
                 xmlns="http://www.w3.org/2000/svg"

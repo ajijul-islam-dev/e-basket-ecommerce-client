@@ -2,6 +2,7 @@ import React from "react";
 import SideBar from "../../Components/Sidebar/Sidebar";
 import BannerSlider from "../../Components/BannerSlider/BannerSlider";
 import QuickSale from "../../Components/QuickSale/QuickSale";
+import ProductSlide from "../../Components/OfferSlide/ProductSlide";
 
 function Home() {
   return (
@@ -16,6 +17,9 @@ function Home() {
           </div>
           <div className="my-10">
             <QuickSale />
+          </div>
+          <div className="my-12">
+            <ProductSlide/>
           </div>
         </div>
       </div>
