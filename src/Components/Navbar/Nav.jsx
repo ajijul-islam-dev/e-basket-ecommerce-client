@@ -24,7 +24,7 @@ function NavListMenu() {
         allowHover={true}
       ></Menu>
     </React.Fragment>
-  );
+  ); 
 }
 
 function NavList() {
