@@ -1,0 +1,43 @@
+[
+    {
+      "id": 1,
+      "reviewer_name": "A. Nehal Hasnain",
+      "reviewer_image": "/images/reviewers/nehal.jpg",
+      "rating": 5,
+      "review": "eBasket looks promising. Already ordered few products with them. Products are authentic and delivery was fast.",
+      "date": "2024-08-19"
+    },
+    {
+      "id": 2,
+      "reviewer_name": "Fahim Ahmed",
+      "reviewer_image": "/images/reviewers/fahim.jpg",
+      "rating": 4,
+      "review": "Good service but some products were out of stock.",
+      "date": "2024-08-18"
+    },
+    {
+      "id": 3,
+      "reviewer_name": "Mariya Akter",
+      "reviewer_image": "/images/reviewers/mariya.jpg",
+      "rating": 5,
+      "review": "Great experience! Quick delivery and quality products.",
+      "date": "2024-08-17"
+    },
+    {
+      "id": 4,
+      "reviewer_name": "Rafiq Islam",
+      "reviewer_image": "/images/reviewers/rafiq.jpg",
+      "rating": 3,
+      "review": "Delivery was a bit late, but the products were good.",
+      "date": "2024-08-16"
+    },
+    {
+      "id": 5,
+      "reviewer_name": "Tania Zaman",
+      "reviewer_image": "/images/reviewers/tania.jpg",
+      "rating": 4,
+      "review": "Satisfied with the service, but they can improve their packaging.",
+      "date": "2024-08-15"
+    }
+  ]
+  

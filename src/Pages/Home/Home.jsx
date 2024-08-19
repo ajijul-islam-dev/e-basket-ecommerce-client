@@ -11,6 +11,7 @@ import axios from "axios";
 import productData  from "../../assets/data/products.json"
 import categories  from "../../assets/data/categories.json"
 import CategorySlide from "../../Components/CategorySlide/CategorySlide";
+import ReviewSlide from "../../Components/ReviewSlide/ReviewSlide";
 
 function Home() {
 
@@ -39,6 +40,9 @@ function Home() {
           </div>
           <div className="my-12">
             <ProductSlide title="Flash Sales" icon={<MdFlashOn className="text-3xl"/>} data={productData}/>
+          </div>
+          <div className="my-20">
+            <ReviewSlide/>
           </div>
         </div>
       </div>
