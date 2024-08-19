@@ -20,6 +20,9 @@ const BannerSlider = () => {
       <div>
         <img src="/images/slider/slider_2.jpg" alt="" />
       </div>
+      <div>
+        <img src="/images/slider/slider_2.jpg" alt="" />
+      </div>
     </Slider>
   );
 };

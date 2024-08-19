@@ -66,7 +66,7 @@ function Nav() {
   }, []);
 
   return (
-    <Navbar className="mx-auto px-4 py-2 bg-[#f15a22] md:bg-white" fullWidth>
+    <Navbar className="mx-auto px-4 py-2 bg-[#f15a22] md:bg-white fixed top-0 left-0 right-0 z-50" fullWidth>
       <div className="flex items-center justify-between text-blue-gray-900">
         <div className="flex justify-center items-center">
           <IconButton

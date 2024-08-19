@@ -3,13 +3,16 @@ import Slider from "react-slick";
 import ProductCard from "../ProductCard/ProductCard";
 import { AiOutlineShopping } from "react-icons/ai";
 import { Link } from "react-router-dom";
-const ProductSlide = ({title,icon,data}) => {
+import CategoryCard from "../CategoryCard/CategoryCard";
+
+
+const CategorySlide = ({title,icon,data}) => {
   console.log(data);
   var settings = {
     dots: true,
     infinite: false,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 10,
     slidesToScroll: 4,
     initialSlide: 0,
     arrows: true,
@@ -18,7 +21,7 @@ const ProductSlide = ({title,icon,data}) => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 10,
           slidesToScroll: 3,
           infinite: true,
           dots: true,
@@ -27,7 +30,7 @@ const ProductSlide = ({title,icon,data}) => {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 5,
           slidesToScroll: 2,
           initialSlide: 2,
         },
@@ -35,7 +38,7 @@ const ProductSlide = ({title,icon,data}) => {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 4,
           slidesToScroll: 1,
         },
       },
@@ -56,10 +59,10 @@ const ProductSlide = ({title,icon,data}) => {
         </div>
       </div>
       <Slider {...settings} className="">
-       {data?.map((product,i)=> <div className="" key={i}> <ProductCard product={product} /></div> )}
+       {data?.map((category,i)=> <div className="" key={i}> <CategoryCard category={category} /></div> )}
       </Slider>
     </div>
   );
 };
 
-export default ProductSlide;
+export default CategorySlide;

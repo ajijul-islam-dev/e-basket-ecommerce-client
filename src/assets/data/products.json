@@ -1,0 +1,171 @@
+[
+    {
+      "id": 1,
+      "name": "Lifebuoy Handwash Total Pump Refill Combo Pack",
+      "price": 130.00,
+      "old_price": 140.00,
+      "volume": "170ml",
+      "discount": "7%",
+      "description": "Combo Pack",
+      "categories": ["cleaning supplies", "household & cleaning", "offers"],
+      "sellers": "eBasket grocery",
+      "image": "/images/offerSale/lifebouy.jpg",
+      "additional_information": {
+        "features": [
+          "Kills 99.9% bacteria and viruses",
+          "Mild on skin"
+        ],
+        "package_includes": [
+          "2 x Lifebuoy Handwash Total Pump Refill Pack"
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "name": "Lifebuoy Antibacterial Handwash Refill Pack",
+      "price": 120.00,
+      "old_price": 130.00,
+      "volume": "150ml",
+      "discount": "8%",
+      "description": "Single Pack",
+      "categories": ["cleaning supplies", "household & cleaning", "offers"],
+      "sellers": "eBasket grocery",
+      "image": "/images/offerSale/lifebouy.jpg",
+      "additional_information": {
+        "features": [
+          "Antibacterial protection",
+          "Refreshing mint scent"
+        ],
+        "package_includes": [
+          "1 x Lifebuoy Antibacterial Handwash Refill Pack"
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "name": "Lifebuoy Total 10 Handwash Refill Pack",
+      "price": 110.00,
+      "old_price": 120.00,
+      "volume": "170ml",
+      "discount": "10%",
+      "description": "Single Pack",
+      "categories": ["cleaning supplies", "household & cleaning", "offers"],
+      "sellers": "eBasket grocery",
+      "image": "/images/offerSale/lifebouy.jpg",
+      "additional_information": {
+        "features": [
+          "Total protection from germs",
+          "Rich in foam"
+        ],
+        "package_includes": [
+          "1 x Lifebuoy Total 10 Handwash Refill Pack"
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "name": "Lifebuoy Total 10 Handwash Refill Pack",
+      "price": 110.00,
+      "old_price": 120.00,
+      "volume": "170ml",
+      "discount": "10%",
+      "description": "Single Pack",
+      "categories": ["cleaning supplies", "household & cleaning", "offers"],
+      "sellers": "eBasket grocery",
+      "image": "/images/offerSale/lifebouy.jpg",
+      "additional_information": {
+        "features": [
+          "Total protection from germs",
+          "Rich in foam"
+        ],
+        "package_includes": [
+          "1 x Lifebuoy Total 10 Handwash Refill Pack"
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "name": "Lifebuoy Total 10 Handwash Refill Pack",
+      "price": 110.00,
+      "old_price": 120.00,
+      "volume": "170ml",
+      "discount": "10%",
+      "description": "Single Pack",
+      "categories": ["cleaning supplies", "household & cleaning", "offers"],
+      "sellers": "eBasket grocery",
+      "image": "/images/offerSale/lifebouy.jpg",
+      "additional_information": {
+        "features": [
+          "Total protection from germs",
+          "Rich in foam"
+        ],
+        "package_includes": [
+          "1 x Lifebuoy Total 10 Handwash Refill Pack"
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "name": "Lifebuoy Total 10 Handwash Refill Pack",
+      "price": 110.00,
+      "old_price": 120.00,
+      "volume": "170ml",
+      "discount": "10%",
+      "description": "Single Pack",
+      "categories": ["cleaning supplies", "household & cleaning", "offers"],
+      "sellers": "eBasket grocery",
+      "image": "/images/offerSale/lifebouy.jpg",
+      "additional_information": {
+        "features": [
+          "Total protection from germs",
+          "Rich in foam"
+        ],
+        "package_includes": [
+          "1 x Lifebuoy Total 10 Handwash Refill Pack"
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "name": "Lifebuoy Total 10 Handwash Refill Pack",
+      "price": 110.00,
+      "old_price": 120.00,
+      "volume": "170ml",
+      "discount": "10%",
+      "description": "Single Pack",
+      "categories": ["cleaning supplies", "household & cleaning", "offers"],
+      "sellers": "eBasket grocery",
+      "image": "/images/offerSale/lifebouy.jpg",
+      "additional_information": {
+        "features": [
+          "Total protection from germs",
+          "Rich in foam"
+        ],
+        "package_includes": [
+          "1 x Lifebuoy Total 10 Handwash Refill Pack"
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "name": "Lifebuoy Total 10 Handwash Refill Pack",
+      "price": 110.00,
+      "old_price": 120.00,
+      "volume": "170ml",
+      "discount": "10%",
+      "description": "Single Pack",
+      "categories": ["cleaning supplies", "household & cleaning", "offers"],
+      "sellers": "eBasket grocery",
+      "image": "/images/offerSale/lifebouy.jpg",
+      "additional_information": {
+        "features": [
+          "Total protection from germs",
+          "Rich in foam"
+        ],
+        "package_includes": [
+          "1 x Lifebuoy Total 10 Handwash Refill Pack"
+        ]
+      }
+    }
+  ]
+  
