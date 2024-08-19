@@ -22,14 +22,14 @@ const ReviewSlide = () => {
       </div>
       <Slider {...settings}>
         {reviewData?.map((review,i)=> <div key={i}>
-          <div className="flex items-center justify-center gap-10 mx-10">
+          <div className="flex items-center justify-center gap-8 mx-10 rounded-lg">
             <div className="">
                 <div className="flex flex-col justify-center items-center gap-2">
                     <img className="w-40 rounded-full" src="/images/review/review.jpg" alt="" />
-                    <p className="text-lg">{review.reviewer_name} Islam</p>
+                    <p className="text-">{review.reviewer_name} Islam</p>
                 </div>
             </div>
-            <div className="bg-gray-300 p-3 min-h-36 text-gray-800">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus aliquid debitis sint voluptate? Nobis sit quia officia possimus ipsum magnam?</div>
+            <div className="w-full bg-gray-300 p-3 min-h-36 text-gray-800"><p>{review.review}</p></div>
           </div>
         </div>)}
       </Slider>
