@@ -14,10 +14,11 @@ import CategorySlide from "../../Components/CategorySlide/CategorySlide";
 import ReviewSlide from "../../Components/ReviewSlide/ReviewSlide";
 import DownloadAppSection from "../../Components/DownloadAppSection/DownloadAppSection";
 import Footer from "../../Components/Footer/Footer";
+import { useOutletContext } from "react-router-dom";
 
 function Home() {
-
-  console.log(productData);
+  const {handleCartModal} = useOutletContext();
+ 
   return (
     <div className="">
       <div className="grid grid-cols-1 md:grid-cols-10 w-full overflow-x-hidden">

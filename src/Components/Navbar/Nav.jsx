@@ -55,7 +55,7 @@ function NavList() {
   );
 }
 
-function Nav({ handleNavModal,handleCartModal }) {
+function Nav({ handleNavModal, handleCartModal, handleLoginModal }) {
   const [openNav, setOpenNav] = React.useState(false);
 
   React.useEffect(() => {
@@ -84,6 +84,7 @@ function Nav({ handleNavModal,handleCartModal }) {
             <Bars3Icon className="h-6 w-6" strokeWidth={2} />
           </IconButton>
           <Button
+            onClick={() => handleLoginModal()}
             className="md:hidden bg-transparent rounded-none shadow-none border-none"
             size="sm"
           >
@@ -121,7 +122,7 @@ function Nav({ handleNavModal,handleCartModal }) {
             placeholder="Search here .."
           />
         </div>
-        <div className="md:hidden" onClick={()=> handleCartModal()}>
+        <div className="md:hidden" onClick={() => handleCartModal()}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -140,7 +141,10 @@ function Nav({ handleNavModal,handleCartModal }) {
 
         <div className="hidden md:flex">
           <NavList />
-          <Button className="bg-[#f15a22] rounded-none px-6 w-[100px]">
+          <Button
+            onClick={() => handleLoginModal()}
+            className="bg-[#f15a22] rounded-none px-6 w-[100px]"
+          >
             Log In
           </Button>
         </div>

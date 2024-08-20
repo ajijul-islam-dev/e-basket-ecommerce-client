@@ -4,10 +4,13 @@ import Nav from "./Navbar/Nav";
 import CartBtn from "./CartBtn/CartBtn";
 import NavModal from "./Modals/NavModal";
 import CartModal from "./Modals/CartModals";
+import LoginModal from "./Modals/loginModal";
 
 function Main() {
   const [isNavOpen, setIsNavOpen] = React.useState(false);
   const [isCartOpen, setIsCartOpen] = React.useState(false);
+  const [isLoginOpen, setIsLoginOpen] = React.useState(false);
+
 
   const handleNavModal = () => {
     setIsNavOpen(true);
@@ -26,15 +29,25 @@ function Main() {
     setIsCartOpen(false);
   };
 
+
+  const handleLoginModal = ()=>{
+    setIsLoginOpen(true)
+  }
+
+  const handleCloseLoginModal = ()=>{
+    setIsLoginOpen(false)
+  }
+
   return (
     <>
-      <Nav handleNavModal={handleNavModal} handleCartModal={handleCartModal} />
+      <Nav handleNavModal={handleNavModal} handleCartModal={handleCartModal} handleLoginModal={handleLoginModal} />
       <NavModal isNavOpen={isNavOpen} handleNavClose={handleNavClose} />
       <CartModal isCartOpen={isCartOpen} handleCartClose={handleCartClose}/>
-      <div className=" mt-36 md:mt-20">
-        <Outlet />
+      <LoginModal isLoginOpen={isLoginOpen} handleCloseLoginModal={handleCloseLoginModal}/>
+      <div className="">
+        <Outlet context={{handleCartModal}} />
       </div>
-      <CartBtn />
+      <CartBtn handleCartModal={handleCartModal} />
 
     </>
   );
