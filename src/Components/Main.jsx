@@ -3,26 +3,39 @@ import { Outlet } from "react-router-dom";
 import Nav from "./Navbar/Nav";
 import CartBtn from "./CartBtn/CartBtn";
 import NavModal from "./Modals/NavModal";
+import CartModal from "./Modals/CartModals";
 
 function Main() {
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [isNavOpen, setIsNavOpen] = React.useState(false);
+  const [isCartOpen, setIsCartOpen] = React.useState(false);
 
   const handleNavModal = () => {
-    setIsOpen(true);
+    setIsNavOpen(true);
+    
+  };
+  const handleCartModal = () => {
+    setIsCartOpen(true);
+    
   };
 
-  const handleClose = () => {
-    setIsOpen(false);
+  const handleNavClose = () => {
+    setIsNavOpen(false);
+  };
+
+  const handleCartClose = () => {
+    setIsCartOpen(false);
   };
 
   return (
     <>
-      <Nav handleNavModal={handleNavModal} />
-      <NavModal isOpen={isOpen} handleClose={handleClose} />
+      <Nav handleNavModal={handleNavModal} handleCartModal={handleCartModal} />
+      <NavModal isNavOpen={isNavOpen} handleNavClose={handleNavClose} />
+      <CartModal isCartOpen={isCartOpen} handleCartClose={handleCartClose}/>
       <div className=" mt-36 md:mt-20">
         <Outlet />
       </div>
       <CartBtn />
+
     </>
   );
 }

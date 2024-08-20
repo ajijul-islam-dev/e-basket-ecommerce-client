@@ -9,7 +9,7 @@ import {
   Navbar,
   Typography,
 } from "@material-tailwind/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Bars3Icon } from "@heroicons/react/24/outline";
 
 function NavListMenu() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -55,7 +55,7 @@ function NavList() {
   );
 }
 
-function Nav({ handleNavModal }) {
+function Nav({ handleNavModal,handleCartModal }) {
   const [openNav, setOpenNav] = React.useState(false);
 
   React.useEffect(() => {
@@ -101,7 +101,7 @@ function Nav({ handleNavModal }) {
         </div>
         <div className="hidden md:flex w-[70%] outline-none border-none">
           <Input
-            className="w-full bg-gray-200"
+            className="w-full bg-gray-"
             icon={
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -121,7 +121,7 @@ function Nav({ handleNavModal }) {
             placeholder="Search here .."
           />
         </div>
-        <div className="md:hidden">
+        <div className="md:hidden" onClick={()=> handleCartModal()}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

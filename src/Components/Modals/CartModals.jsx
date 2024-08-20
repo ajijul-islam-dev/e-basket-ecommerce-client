@@ -11,12 +11,11 @@ import {
   Chip,
 } from "@material-tailwind/react";
 
-export default function NavModal({ isNavOpen, handleNavClose }) {
-    console.log(isNavOpen);
+export default function CartModal({ isCartOpen, handleCartClose }) {
   return (
     <React.Fragment>
-      <Button onClick={isNavOpen}>Open Drawer</Button>
-      <Drawer open={isNavOpen} onClose={() => handleNavClose()} className="">
+      <Button onClick={isCartOpen}>Open Drawer</Button>
+      <Drawer open={isCartOpen} onClose={() => handleCartClose()} placement="right">
         <div className="mb-2 flex items-center justify-between p-4">
           <Typography variant="h5" color="blue-gray">
             <img className="w-[150px]" src="/images/logo.webp" alt="" />
@@ -24,7 +23,7 @@ export default function NavModal({ isNavOpen, handleNavClose }) {
           <IconButton
             variant="text"
             color="blue-gray"
-            onClick={() => handleNavClose()}
+            onClick={() => handleCartClose()}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
