@@ -1,15 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { Outlet } from "react-router-dom";
 import Nav from "./Navbar/Nav";
 import CartBtn from "./CartBtn/CartBtn";
 import NavModal from "./Modals/NavModal";
 import CartModal from "./Modals/CartModals";
 import LoginModal from "./Modals/loginModal";
+import ProductDetailsModal from "./Modals/ProductDetails";
 
 function Main() {
   const [isNavOpen, setIsNavOpen] = React.useState(false);
   const [isCartOpen, setIsCartOpen] = React.useState(false);
   const [isLoginOpen, setIsLoginOpen] = React.useState(false);
+  const [isProductOpen, setIsProductOpen] = React.useState(false);
+  const [product,setProduct] = useState([])
 
 
   const handleNavModal = () => {
@@ -30,8 +33,18 @@ function Main() {
   };
 
 
+  const handleProductModal = (product)=>{
+    setIsProductOpen(true)
+    setProduct(product)
+  }
+
   const handleLoginModal = ()=>{
     setIsLoginOpen(true)
+  }
+
+  const handleCloseProductModal = ()=>{
+    setIsProductOpen(false)
+    
   }
 
   const handleCloseLoginModal = ()=>{
@@ -44,9 +57,13 @@ function Main() {
       <NavModal isNavOpen={isNavOpen} handleNavClose={handleNavClose} />
       <CartModal isCartOpen={isCartOpen} handleCartClose={handleCartClose}/>
       <LoginModal isLoginOpen={isLoginOpen} handleCloseLoginModal={handleCloseLoginModal}/>
+      <ProductDetailsModal product={product} isProductOpen={isProductOpen} handleCloseProductModal={handleCloseProductModal}/>
+
       <div className="mt-14 md:mt-10">
-        <Outlet context={{handleCartModal}} />
+        <Outlet context={{handleCartModal,handleProductModal}} />
       </div>
+
+
       <CartBtn handleCartModal={handleCartModal} />
 
     </>

@@ -7,19 +7,15 @@ import {
   IconButton,
   Typography,
   Input,
+  Card,
+  Checkbox,
 } from "@material-tailwind/react";
 
-export function LoginModal( {isLoginOpen,handleCloseLoginModal}) {
-
+export function LoginModal({ isLoginOpen, handleCloseLoginModal }) {
   return (
-    <section className="grid place-items-center relative" >
-      <Dialog className="p-4" size="md" open={isLoginOpen} >
-        <DialogHeader className="justify-between">
-          <img
-            src="/image/exclamation.svg"
-            alt="exclamation"
-            className="w-10 h-10"
-          />
+    <section className="grid place-items-center relative">
+      <Dialog className="p-2" size="sm" open={isLoginOpen}>
+        <DialogHeader className="justify-end">
           <IconButton
             color="gray"
             size="sm"
@@ -43,39 +39,79 @@ export function LoginModal( {isLoginOpen,handleCloseLoginModal}) {
           </IconButton>
         </DialogHeader>
         <DialogBody className="overflow-y-scroll">
-          <Typography color="blue-gray" className="mb-1 font-bold">
-            Reset Settings
-          </Typography>
-          <Typography
-            variant="paragraph"
-            className="font-normal text-gray-600 max-w-lg"
-          >
-            Are you sure you want to reset all settings to their default values?
-            This action cannot be undone.
-          </Typography>
-          <div>
-            <Typography
-              variant="small"
-              className="mt-6 mb-2 text-gray-600 font-normal"
-            >
-              Please type{" "}
-              <strong className="text-gray-900">
-                &quot;Reset settings&quot;
-              </strong>{" "}
-              to confirm.
+          <Card className="mx-auto" color="transparent" shadow={false}>
+            <Typography variant="h4" color="blue-gray">
+              Sign Up
             </Typography>
-            <div className="flex flex-col md:flex-row gap-2">
-              <Input
-                color="gray"
-                label="Reset settings"
-                size="lg"
-                className="w-full md:max-w-lg"
+            <Typography color="gray" className="mt-1 font-normal">
+              Nice to meet you! Enter your details to register.
+            </Typography>
+            <form className="mt-5 mb-2 w-full  sm:w-96">
+              <div className="mb-1 flex flex-col gap-6">
+                <Typography variant="h6" color="blue-gray" className="-mb-5">
+                  Your Name
+                </Typography>
+                <Input
+                  size="lg"
+                  placeholder="name@mail.com"
+                  className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
+                  labelProps={{
+                    className: "before:content-none after:content-none",
+                  }}
+                />
+                <Typography variant="h6" color="blue-gray" className="-mb-5">
+                  Your Email
+                </Typography>
+                <Input
+                  size="lg"
+                  placeholder="name@mail.com"
+                  className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
+                  labelProps={{
+                    className: "before:content-none after:content-none",
+                  }}
+                />
+                <Typography variant="h6" color="blue-gray" className="-mb-5">
+                  Password
+                </Typography>
+                <Input
+                  type="password"
+                  size="lg"
+                  placeholder="********"
+                  className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
+                  labelProps={{
+                    className: "before:content-none after:content-none",
+                  }}
+                />
+              </div>
+              <Checkbox
+                label={
+                  <Typography
+                    variant="small"
+                    color="gray"
+                    className="flex items-center font-normal"
+                  >
+                    I agree the
+                    <a
+                      href="#"
+                      className="font-medium transition-colors hover:text-gray-900"
+                    >
+                      &nbsp;Terms and Conditions
+                    </a>
+                  </Typography>
+                }
+                containerProps={{ className: "-ml-2.5" }}
               />
-              <Button color="gray" className="w-full lg:max-w-[15rem]">
-                I understant, reset settings
+              <Button className="mt-6" fullWidth>
+                sign up
               </Button>
-            </div>
-          </div>
+              <Typography color="gray" className="mt-4 text-center font-normal">
+                Already have an account?{" "}
+                <a href="#" className="font-medium text-gray-900">
+                  Sign In
+                </a>
+              </Typography>
+            </form>
+          </Card>
         </DialogBody>
       </Dialog>
     </section>

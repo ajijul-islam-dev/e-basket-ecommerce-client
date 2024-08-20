@@ -17,7 +17,7 @@ import Footer from "../../Components/Footer/Footer";
 import { useOutletContext } from "react-router-dom";
 
 function Home() {
-  const {handleCartModal} = useOutletContext();
+  const {handleCartModal,handleProductModal} = useOutletContext();
  
   return (
     <div className="">
@@ -33,16 +33,16 @@ function Home() {
             <QuickSale />
           </div>
           <div className="my-12">
-            <ProductSlide title="Offers" icon={<AiOutlineShopping className="text-3xl"/>} data={productData}/>
+            <ProductSlide handleProductModal={handleProductModal} title="Offers" icon={<AiOutlineShopping className="text-3xl"/>} data={productData}/>
           </div>
           <div className="">
             <CategorySlide  title="Top Categories" icon={<MdOutlineCategory className="text-3xl" />} data={categories}/>
           </div>
           <div className="my-12">
-            <ProductSlide title="Hot Sales" icon={<FaFire className="text-3xl"/>} data={productData}/>
+            <ProductSlide handleProductModal={handleProductModal} title="Hot Sales" icon={<FaFire className="text-3xl"/>} data={productData}/>
           </div>
           <div className="my-12">
-            <ProductSlide title="Flash Sales" icon={<MdFlashOn className="text-3xl"/>} data={productData}/>
+            <ProductSlide handleProductModal={handleProductModal} title="Flash Sales" icon={<MdFlashOn className="text-3xl"/>} data={productData}/>
           </div>
           <div className="my-20">
             <ReviewSlide/>

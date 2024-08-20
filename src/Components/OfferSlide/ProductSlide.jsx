@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import ProductCard from "../ProductCard/ProductCard";
 import { AiOutlineShopping } from "react-icons/ai";
 import { Link } from "react-router-dom";
-const ProductSlide = ({title,icon,data,dot}) => {
+const ProductSlide = ({title,icon,data,dot,handleProductModal}) => {
   console.log(data);
   var settings = {
     dots: dot || true,
@@ -56,7 +56,7 @@ const ProductSlide = ({title,icon,data,dot}) => {
         </div>
       </div>
       <Slider {...settings} className="">
-       {data?.map((product,i)=> <div className="" key={i}> <ProductCard product={product} /></div> )}
+       {data?.map((product,i)=> <div onClick={()=>handleProductModal(product)} className="" key={i}> <ProductCard product={product} /></div> )}
       </Slider>
     </div>
   );
