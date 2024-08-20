@@ -12,8 +12,8 @@ import {
 export function LoginModal( {isLoginOpen,handleCloseLoginModal}) {
 
   return (
-    <section className="grid place-items-center">
-      <Dialog className="p-4" size="md" open={isLoginOpen}>
+    <section className="grid place-items-center relative" >
+      <Dialog className="p-4" size="md" open={isLoginOpen} >
         <DialogHeader className="justify-between">
           <img
             src="/image/exclamation.svg"
