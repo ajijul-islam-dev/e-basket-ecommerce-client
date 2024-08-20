@@ -12,6 +12,8 @@ import productData  from "../../assets/data/products.json"
 import categories  from "../../assets/data/categories.json"
 import CategorySlide from "../../Components/CategorySlide/CategorySlide";
 import ReviewSlide from "../../Components/ReviewSlide/ReviewSlide";
+import DownloadAppSection from "../../Components/DownloadAppSection/DownloadAppSection";
+import Footer from "../../Components/Footer/Footer";
 
 function Home() {
 
@@ -43,6 +45,12 @@ function Home() {
           </div>
           <div className="my-20">
             <ReviewSlide/>
+          </div>
+          <div className="mt-32">
+            <DownloadAppSection/>
+          </div>
+          <div className="mt-20">
+            <Footer/>
           </div>
         </div>
       </div>

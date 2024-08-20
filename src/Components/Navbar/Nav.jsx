@@ -24,7 +24,7 @@ function NavListMenu() {
         allowHover={true}
       ></Menu>
     </React.Fragment>
-  ); 
+  );
 }
 
 function NavList() {
@@ -55,7 +55,7 @@ function NavList() {
   );
 }
 
-function Nav() {
+function Nav({ handleNavModal }) {
   const [openNav, setOpenNav] = React.useState(false);
 
   React.useEffect(() => {
@@ -66,20 +66,22 @@ function Nav() {
   }, []);
 
   return (
-    <Navbar className="mx-auto px-4 py-2 bg-[#f15a22] md:bg-white fixed top-0 left-0 right-0 z-50" fullWidth>
+    <Navbar
+      className="mx-auto px-4 py-2 bg-[#f15a22] md:bg-white fixed top-0 left-0 right-0 z-50"
+      fullWidth
+    >
       <div className="flex items-center justify-between text-blue-gray-900">
         <div className="flex justify-center items-center">
           <IconButton
             variant="text"
             color="blue-gray"
             className="md:hidden text-white"
-            onClick={() => setOpenNav(!openNav)}
+            onClick={() => {
+              setOpenNav(!openNav);
+              handleNavModal();
+            }}
           >
-            {openNav ? (
-              <XMarkIcon className="h-6 w-6" strokeWidth={2} />
-            ) : (
-              <Bars3Icon className="h-6 w-6" strokeWidth={2} />
-            )}
+            <Bars3Icon className="h-6 w-6" strokeWidth={2} />
           </IconButton>
           <Button
             className="md:hidden bg-transparent rounded-none shadow-none border-none"
@@ -139,33 +141,32 @@ function Nav() {
         <div className="hidden md:flex">
           <NavList />
           <Button className="bg-[#f15a22] rounded-none px-6 w-[100px]">
-          Log In
-        </Button>
+            Log In
+          </Button>
         </div>
-      
       </div>
       <div className="md:hidden w-full mx-auto mt-3">
-          <Input
-            className="w-full bg-white outline-none"
-            icon={
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="size-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
-                />
-              </svg>
-            }
-            placeholder="Search here .."
-          />
-        </div>
+        <Input
+          className="w-full bg-white outline-none"
+          icon={
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="size-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+              />
+            </svg>
+          }
+          placeholder="Search here .."
+        />
+      </div>
     </Navbar>
   );
 }
