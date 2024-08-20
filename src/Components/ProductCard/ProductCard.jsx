@@ -16,11 +16,11 @@ const ProductCard = ({product}) => {
 
       <div className="">
         <div className="my-1">
-          <h3 className="text-gray-800 mr-5">
+          <h3 className="text-gray-800 md">
            {product.name}
           </h3>
-          <p>Weight : {product.volume}</p>
-          <p className="font-semibold">
+          <p className="text-sm">Weight : {product.volume}</p>
+          <p className="font-semibold text-sm">
             BDT {product.price}.00{" "}
             <span className="line-through text-gray-500 ml-1">BDT {product.old_price}.00</span>
           </p>

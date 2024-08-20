@@ -44,7 +44,7 @@ function Main() {
       <NavModal isNavOpen={isNavOpen} handleNavClose={handleNavClose} />
       <CartModal isCartOpen={isCartOpen} handleCartClose={handleCartClose}/>
       <LoginModal isLoginOpen={isLoginOpen} handleCloseLoginModal={handleCloseLoginModal}/>
-      <div className="mt-20">
+      <div className="mt-10">
         <Outlet context={{handleCartModal}} />
       </div>
       <CartBtn handleCartModal={handleCartModal} />

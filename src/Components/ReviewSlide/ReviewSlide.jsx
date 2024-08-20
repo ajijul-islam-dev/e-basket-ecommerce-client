@@ -16,13 +16,13 @@ const ReviewSlide = () => {
   };
 
   return (
-    <div className="mx-10">
+    <div className="md:mx-10">
       <div className="">
-        <h2 className="text-2xl my-5">Our Motivation</h2>
+        <h2 className="text-2xl my-5 text-center md:text-left">Our Motivation</h2>
       </div>
       <Slider {...settings}>
         {reviewData?.map((review,i)=> <div key={i}>
-          <div className="flex items-center justify-center gap-8 mx-10 rounded-lg">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-8 mx-10 rounded-lg">
             <div className="">
                 <div className="flex flex-col justify-center items-center gap-2">
                     <img className="w-40 rounded-full" src="/images/review/review.jpg" alt="" />

@@ -3,10 +3,10 @@ import Slider from "react-slick";
 import ProductCard from "../ProductCard/ProductCard";
 import { AiOutlineShopping } from "react-icons/ai";
 import { Link } from "react-router-dom";
-const ProductSlide = ({title,icon,data}) => {
+const ProductSlide = ({title,icon,data,dot}) => {
   console.log(data);
   var settings = {
-    dots: true,
+    dots: dot || true,
     infinite: false,
     speed: 500,
     slidesToShow: 4,

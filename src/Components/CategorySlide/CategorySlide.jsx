@@ -9,7 +9,7 @@ import CategoryCard from "../CategoryCard/CategoryCard";
 const CategorySlide = ({title,icon,data}) => {
   console.log(data);
   var settings = {
-    dots: true,
+    dots: false,
     infinite: false,
     speed: 500,
     slidesToShow: 10,

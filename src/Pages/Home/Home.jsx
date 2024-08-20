@@ -36,7 +36,7 @@ function Home() {
             <ProductSlide title="Offers" icon={<AiOutlineShopping className="text-3xl"/>} data={productData}/>
           </div>
           <div className="">
-            <CategorySlide title="Top Categories" icon={<MdOutlineCategory className="text-3xl" />} data={categories}/>
+            <CategorySlide  title="Top Categories" icon={<MdOutlineCategory className="text-3xl" />} data={categories}/>
           </div>
           <div className="my-12">
             <ProductSlide title="Hot Sales" icon={<FaFire className="text-3xl"/>} data={productData}/>
