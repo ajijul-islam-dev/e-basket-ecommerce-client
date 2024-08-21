@@ -14,8 +14,8 @@ import {
 export function LoginModal({ isLoginOpen, handleCloseLoginModal }) {
   return (
     <section className="grid place-items-center relative">
-      <Dialog className="p-2" size="sm" open={isLoginOpen}>
-        <DialogHeader className="justify-end">
+      <Dialog className="p-2 relative" size="sm" open={isLoginOpen}>
+        <span className="absolute top-5 right-5 z-50">
           <IconButton
             color="gray"
             size="sm"
@@ -37,8 +37,8 @@ export function LoginModal({ isLoginOpen, handleCloseLoginModal }) {
               />
             </svg>
           </IconButton>
-        </DialogHeader>
-        <DialogBody className="overflow-y-scroll">
+        </span>
+        <DialogBody className="mx-auto">
           <Card className="mx-auto" color="transparent" shadow={false}>
             <Typography variant="h4" color="blue-gray">
               Sign Up
