@@ -13,8 +13,8 @@ import {
 
 export function LoginModal({ isLoginOpen, handleCloseLoginModal }) {
   return (
-    <section className="grid place-items-center relative mb-2">
-      <Dialog className="px-2 relative" size="sm" open={isLoginOpen}>
+    <section className="flex items-center justify-center relative">
+      <Dialog className="w-full mx-auto pl-3" size="sm" open={isLoginOpen}>
         <span className="absolute top-5 right-5 z-50">
           <IconButton
             color="gray"

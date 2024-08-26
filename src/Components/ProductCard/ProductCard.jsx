@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import CartCount from "../CartCount/CartCount";
 
-const ProductCard = ({product}) => {
+const ProductCard = ({product,handleProductModal}) => {
   return (
-    <div className="shadow  p-0.5 hover:-translate-y-0.5 duration-200 m-1 md:m-2">
-      <div className="relative p-4">
+    <div onClick={()=>handleProductModal(product)} className="relative shadow  p-0.5 hover:-translate-y-0.5 duration-200 m-1 md:m-2">
+      <div className="">
         <img src="images/offerSale/lifebouy.jpg" alt="" />
         <span className="font-semibold text-white bg-[#f15a22] px-2 rounded-md absolute top-3 right-3">
           8%
         </span>
-        <div className="absolute bottom-0 right-3 text-whit px-2 rounded-md">
+        <div className="absolute bottom-0 right-3 text-whit px-2 rounded-md z-50">
           <CartCount />
         </div>
       </div>

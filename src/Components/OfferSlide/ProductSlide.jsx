@@ -56,7 +56,7 @@ const ProductSlide = ({title,icon,data,dot,handleProductModal}) => {
         </div>
       </div>
       <Slider {...settings} className="">
-       {data?.map((product,i)=> <div onClick={()=>handleProductModal(product)} className="" key={i}> <ProductCard product={product} /></div> )}
+       {data?.map((product,i)=> <div  className="" key={i}> <ProductCard handleProductModal={handleProductModal} product={product} /></div> )}
       </Slider>
     </div>
   );

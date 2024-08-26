@@ -21,10 +21,8 @@ function Home() {
  
   return (
     <div className="">
-      <div className="grid grid-cols-1 md:grid-cols-10 w-full overflow-x-hidden">
-        <div className="md:col-span-2 hidden md:block">
-          <SideBar />
-        </div>
+      <div className="grid grid-cols-1 w-full overflow-x-hidden">
+    
         <div className="md:col-span-8 ">
           <div className="">
             <BannerSlider />
