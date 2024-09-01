@@ -9,7 +9,7 @@ const ProductCard = ({product,handleProductModal}) => {
         <span className="font-semibold text-white bg-[#f15a22] px-2 rounded-md absolute top-3 right-3">
           8%
         </span>
-        <div className="absolute bottom-0 right-3 text-whit px-2 rounded-md z-50">
+        <div className="absolute bottom-24 md:bottom-0 right-0 text-whit px-2 rounded-md z-50">
           <CartCount />
         </div>
       </div>

@@ -1,4 +1,8 @@
 import React, { useState } from "react";
+import { FaFire } from "react-icons/fa";
+import { IoDocumentText } from "react-icons/io5";
+import { MdHistory, MdOutlineLocalOffer } from "react-icons/md";
+import { RiVipDiamondLine } from "react-icons/ri";
 import { Sidebar, Menu, MenuItem, SubMenu } from "react-pro-sidebar";
 
 const SideBar = () => {
@@ -29,6 +33,22 @@ const SideBar = () => {
     >
       <div style={{ display: "flex", flexDirection: "column", height: "100%" }}>
         <div style={{ flex: 1, marginBottom: "32px" }}>
+          <Menu menuItemStyles={menuItemStyles}>
+            <MenuItem label="offer" icon={<MdOutlineLocalOffer className="text-xl text-[#f15a22]" />}>Offer</MenuItem>
+          </Menu>
+          <Menu menuItemStyles={menuItemStyles}>
+            <MenuItem label="offer" icon={<FaFire className="text-xl text-[#f15a22]" />}>Hot Sales</MenuItem>
+          </Menu>
+          <Menu menuItemStyles={menuItemStyles}>
+            <MenuItem label="offer" icon={<RiVipDiamondLine className="text-xl text-[#f15a22]" />}>eBasket Special</MenuItem>
+          </Menu>
+          <Menu menuItemStyles={menuItemStyles}>
+            <MenuItem label="offer" icon={<IoDocumentText className="text-xl text-[#f15a22]" />}>My Products</MenuItem>
+          </Menu>
+          <Menu menuItemStyles={menuItemStyles}>
+            <MenuItem label="offer" icon={<MdHistory className="text-xl text-[#f15a22]" />}>Order History</MenuItem>
+          </Menu>
+          <hr />
           <Menu menuItemStyles={menuItemStyles}>
             <SubMenu label="Charts" icon="">
               <MenuItem>Pie charts</MenuItem>
